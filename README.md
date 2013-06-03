@@ -8,7 +8,7 @@ In the background, whenever a link is clicked, an *AJAX* call is made to the giv
 
 ## Usage
 
-Include the script *after* you have included jQuery in the *head* of the page. Invoke the *onepage* function.
+Include the script *after* you have included jQuery in the *head* of every page of your website. Invoke the *onepage* function.
 
 ```html
 <head>
