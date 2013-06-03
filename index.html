@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>jquery.onepage by prperold</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>jquery.onepage</h1>
+        <h2>Convert any standard multi-page website into a single page app</h2>
+        <a href="https://github.com/prperold/jquery-onepage" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="jqueryonepage" class="anchor" href="#jqueryonepage"><span class="octicon octicon-link"></span></a>jquery.onepage</h1>
+
+<p>Convert any standard multi-page website into a single page app</p>
+
+<h2>
+<a name="how-it-works" class="anchor" href="#how-it-works"><span class="octicon octicon-link"></span></a>How it works</h2>
+
+<p>In the background, whenever a link is clicked, an <em>AJAX</em> call is made to the given url. The body and title of the response replaces those of the current page.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Include the script <em>after</em> you have included jQuery in the <em>head</em> of the page. Invoke the <em>onepage</em> function.</p>
+
+<div class="highlight"><pre><span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/path/to/jquery.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"/path/to/jquery.onepage.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+        <span class="nx">$</span><span class="p">.</span><span class="nx">onepage</span><span class="p">();</span>
+    <span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</pre></div>
+
+<h2>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<p>An <em>options</em> object can be passed into the function</p>
+
+<div class="highlight"><pre><span class="nx">$</span><span class="p">.</span><span class="nx">onepage</span><span class="p">({</span>
+    <span class="nx">configParameter1</span><span class="o">:</span> <span class="nx">configParameterValue1</span><span class="p">,</span>
+    <span class="nx">configParameter2</span><span class="o">:</span> <span class="nx">configParameterValue2</span><span class="p">,</span>
+    <span class="p">.</span>
+    <span class="p">.</span>
+    <span class="p">.</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>The following parameters are currently supported:</p>
+
+<h3>
+<a name="showloader" class="anchor" href="#showloader"><span class="octicon octicon-link"></span></a>showLoader</h3>
+
+<p>Whether or not a <em>loader</em> element must be displayed while waiting for the response of an ajaz request (default: <strong>true</strong>).</p>
+
+<h3>
+<a name="loaderhtml" class="anchor" href="#loaderhtml"><span class="octicon octicon-link"></span></a>loaderHtml</h3>
+
+<p>If <em>showLoader</em> is set to true, custom loader html can be set here (default: "**loading…**").</p>
+
+<h3>
+<a name="minloadertime-ms" class="anchor" href="#minloadertime-ms"><span class="octicon octicon-link"></span></a>minLoaderTime (ms)</h3>
+
+<p>The minimum time that the loader will be displayed. The reasoning behind this is to avoid <em>flickering</em> when the response is very quick. The loader also, however, will never show for responses that come back quicker than 100 milliseconds. (default: <strong>500</strong>)</p>
+
+<h3>
+<a name="rebind" class="anchor" href="#rebind"><span class="octicon octicon-link"></span></a>rebind</h3>
+
+<p>Callback function that will always execute after a new page's content has been placed in the <em>DOM</em>. Place all existing event bindings in here. (default: function(){})</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/prperold/jquery-onepage/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/prperold/jquery-onepage/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/prperold/jquery-onepage"></a> is maintained by <a href="https://github.com/prperold">prperold</a>.</p>
+
+          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
