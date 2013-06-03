@@ -42,7 +42,7 @@ Whether or not a *loader* element must be displayed while waiting for the respon
 
 ### loaderHtml
 
-If *showLoader* is set to true, custom loader html can be set here (default: "**loading…**").
+If *showLoader* is set to true, custom loader html can be set here (default: **"loading…"**).
         
 ### minLoaderTime (ms)
 
