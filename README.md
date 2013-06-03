@@ -10,29 +10,29 @@ In the background, whenever a link is clicked, an *AJAX* call is made to the giv
 
 Include the script *after* you have included jQuery in the *head* of the page. Invoke the *onepage* function.
 
-	```html
-	<head>
-		<script type="text/javascript" src="/path/to/jquery.js"></script>
-		<script type="text/javascript" src="/path/to/jquery.onepage.js"></script>
-		<script type="text/javascript">
-			$.onepage();
-		</script>
-	</head>
-	```
+```html
+<head>
+	<script type="text/javascript" src="/path/to/jquery.js"></script>
+	<script type="text/javascript" src="/path/to/jquery.onepage.js"></script>
+	<script type="text/javascript">
+		$.onepage();
+	</script>
+</head>
+```
 
 ## Configuration
 
 An *options* object can be passed into the function
 
-	```js
-	$.onepage({
-		configParameter1: configParameterValue1,
-		configParameter2: configParameterValue2,
-		.
-		.
-		.
-	});
-	```
+```js
+$.onepage({
+	configParameter1: configParameterValue1,
+	configParameter2: configParameterValue2,
+	.
+	.
+	.
+});
+```
 
 The following parameters are currently supported:
 
