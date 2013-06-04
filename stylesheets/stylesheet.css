@@ -481,6 +481,10 @@ footer a:hover {
 
 /* Custom styles */
 
+.demo-menu > li:first-child {
+  margin-left: 1.5em;
+}
+
 .demo-menu > li {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   list-style: none;
