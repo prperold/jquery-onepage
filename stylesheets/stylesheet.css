@@ -501,3 +501,14 @@ footer a:hover {
   letter-spacing: -1px;
   font-size: 72px;
 }
+
+.ajax-loader {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -20px;
+  z-index: 999;
+}
