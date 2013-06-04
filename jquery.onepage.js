@@ -65,7 +65,8 @@
             loading = false;
 
             // Replace body
-            var body = data.substring(data.indexOf("<body>") + 6, data.indexOf("</body>"));
+            //var body = $('body').html();data.substring(data.indexOf("<body>") + 6, data.indexOf("</body>"));
+            var body = $('body', $(data)).html();
             $('body').html(body);
 
             // Replace title
