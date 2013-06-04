@@ -2,6 +2,10 @@
 
 Convert any standard multi-page website into a single page app
 
+## Demo
+
+Click [here](http://prperold.github.io/jquery-onepage/demo1.html "jquery.onepage demo") to see *jquery.onepage* in action
+
 ## How it works
 
 In the background, whenever a link is clicked, an *AJAX* call is made to the given url. The body and title of the response replaces those of the current page.
