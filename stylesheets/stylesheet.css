@@ -477,3 +477,27 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+/* Custom styles */
+
+.demo-menu > li {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  list-style: none;
+  float: left;
+  padding: 0 45px 0 0;
+  font-size: 22px;
+}
+
+.demo-menu > li:before {
+  content: "//";
+  color: #9ddcff;
+  padding-right: 0.3em;
+  margin-left: -1.5em;
+}
+
+.demo-text {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  letter-spacing: -1px;
+  font-size: 72px;
+}
