@@ -65,13 +65,13 @@
             loading = false;
 
             // Replace body
-            var body = data.substring(data.indexOf("<body>") + 6, data.indexOf("</body>"));
+            var body = data.split("<body")[1].split(">").slice(1).join(">").split("</body>")[0];
             $('body').html(body);
 
             // Replace title
-            var title = data.substring(data.indexOf("<title>") + 7, data.indexOf("</title>"));
-            $('title').text(title);
-
+            var title = data.split("<title")[1].split(">").slice(1).join(">").split("</title>")[0];
+            $('title').html(title);
+            
             // Rebind click events on anchor tags
             bindClickEvents();
 
