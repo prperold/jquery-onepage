@@ -503,6 +503,7 @@ footer a:hover {
 }
 
 .ajax-loader {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   width: 80px;
   height: 40px;
   position: absolute;
@@ -511,4 +512,14 @@ footer a:hover {
   margin-left: -40px;
   margin-top: -20px;
   z-index: 999;
+  text-align: center;
+  background-color: rgba(0,0,0,0.3);
+  width: 200px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  font-size: 25px;
+  color: white;
 }
