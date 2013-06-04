@@ -66,6 +66,7 @@
 
             // Replace body
             var body = data.split("<body")[1].split(">").slice(1).join(">").split("</body>")[0];
+            console.log(body);
             $('body').html(body);
 
             // Replace title
