@@ -42,7 +42,7 @@ The following parameters are currently supported:
 
 ### showLoader
 
-Whether or not a *loader* element must be displayed while waiting for the response of an ajaz request (default: **true**).
+Whether or not a *loader* element must be displayed while waiting for the response of an AJAX request (default: **true**).
 
 ### loaderHtml
 
