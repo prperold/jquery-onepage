@@ -509,7 +509,7 @@ footer a:hover {
 
 .ajax-loader {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   margin-left: -100px;
