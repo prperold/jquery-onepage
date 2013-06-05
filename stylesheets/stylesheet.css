@@ -500,6 +500,10 @@ footer a:hover {
   margin-left: -1.5em;
 }
 
+.demo-menu > li > a.active {
+  text-decoration: underline;
+}
+
 .demo-text {
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   letter-spacing: -1px;
