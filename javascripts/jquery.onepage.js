@@ -21,6 +21,7 @@
                 return; 
             }
             bindClickEvents();
+            bindHistoryEvents();
 
             if(settings.showLoader){
                 $('html').append($('<div class="loader" style="display:none">' + settings.loaderHtml + '</div>'));
@@ -66,7 +67,6 @@
 
             // Replace body
             var body = data.split("<body")[1].split(">").slice(1).join(">").split("</body>")[0];
-            console.log(body);
             $('body').html(body);
 
             // Replace title
@@ -79,8 +79,10 @@
             // Rebind other custom events
             settings.rebind();
 
-            callback();
-
+            if(callback){
+                callback();
+            }
+        
             if(settings.showLoader){
                 hideLoader();
             }
@@ -103,6 +105,12 @@
                 });
             }
         });
+    }
+
+    function bindHistoryEvents(){
+        window.onpopstate = function(e){
+            replacePage(document.location);
+        };
     }
  
 })(jQuery, window);
